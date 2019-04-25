@@ -29,6 +29,9 @@ body {
 .container .redBackground>div .ui-accordion-header:focus, .container .redBackground>div .ui-accordion-header:hover {
     color: #fff;
 }
+.icon-arrow-box:before {
+    content: ➜;
+}
 
 @media screen and (min-width:768px) {
   .reactive-text h2 {
