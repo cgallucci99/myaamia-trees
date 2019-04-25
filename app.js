@@ -20,6 +20,9 @@ var treeSchema = new mongoose.Schema({
 var Tree = mongoose.model("Tree", treeSchema);
 
 app.set("view engine", "ejs");
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use(express.static(__dirname + '/public'));
 
 app.get("/", function(req, res){
@@ -52,6 +55,16 @@ app.get("/tree/:name", function(req,res) {
     //         res.render("tree",{tree:foundTree});
     //     }
     // });
+});
+
+app.post("/search", function (req, res) {
+    Tree.find({english_name: req.body.q}, function (err, trees){
+        if (err) {
+            console.log(err);
+        } else {
+            res.render("search",{trees:trees});
+        }
+    })
 });
 
 var port = process.env.PORT || 3000;

@@ -1,6 +1,43 @@
 body {
     background-image: url("https://miamioh.edu/_files/images/miami-tribe-relations/myaamia-heritage-logo/bg-pattern.png");
 }
+.container section.doubleBorder>div>a:after {
+    display: none;
+}
+
 .caption {
     margin: 2px 2px;
+}
+.contentRowPadding{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.noBottomMargin{
+    margin-bottom: 0px !important;
+}
+
+.reactive-text h2{
+  font-size: 2.5em;
+}
+
+/* Temp fix for mobile tabs */
+.container .redBackground>div .ui-accordion-header {
+    color: #c3142d;
+}
+
+.container .redBackground>div .ui-accordion-header:focus, .container .redBackground>div .ui-accordion-header:hover {
+    color: #fff;
+}
+
+@media screen and (min-width:768px) {
+  .reactive-text h2 {
+      font-size: 2.5vw;
+  }
+}
+  
+@media screen and (max-width:768px){
+    .ribbon-line{
+    margin-top: -5px;
+}
 }
