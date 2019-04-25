@@ -58,7 +58,7 @@ app.get("/tree/:name", function(req,res) {
 });
 
 app.post("/search", function (req, res) {
-    Tree.find({english_name: req.body.q}, function (err, trees){
+    Tree.find({$text: {$search: req.body.q},}, function (err, trees){
         if (err) {
             console.log(err);
         } else {
