@@ -67,6 +67,10 @@ app.post("/search", function (req, res) {
     })
 });
 
+app.get("*", function (req, res) {
+    res.render("not-found");
+});
+
 var port = process.env.PORT || 3000;
 
 app.listen(port, process.env.IP, function() {

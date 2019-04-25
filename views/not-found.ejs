@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Search Results</title>
+    <title>Myaamia Trees</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://miamioh.edu/stylesheets/universal.css?v=201904231530" type="text/css">    
+    <link rel="stylesheet" href="https://miamioh.edu/stylesheets/universal.css?v=201904231530" type="text/css">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 <body>
@@ -40,11 +40,11 @@
             <ul aria-hidden="false" class="primaryNav col-sm-9 col-sm-push-3 nav level-1 list-reset" role="menubar">
                 <li role="presentation">
                     <a href="/" role="menuitem" > Map </a>
-                </li>
-                <li role="presentation">
-                    <a href="/trees" role="menuitem" > Trees </a>
                 </li>                 
                 <li role="presentation">
+                    <a href="/trees" role="menuitem" > Trees </a>
+                </li>
+                <li role="presentation">style="border:10px solid #c3142d; padding: 1em;"
                     <a href="https://miamioh.edu/myaamia-center/index.html" role="menuitem" > Myaamia Center </a>
                 </li>
             </ul>
@@ -52,24 +52,26 @@
         <div class="clearfix"></div>
         <main>
             <header>
-                <h1 class="col-sm-9" style="text-align: center;">Myaamia Trees</h1>
+                <h1 class="col-sm-push-3 col-sm-9">Myaamia Tree Map</h1>
             </header>
-            <section class="colPrimary col-xs-12">
+            <section class="colPrimary pull-right col-xs-12 col-sm-9">
                 <div class="content removepadding col-sm-12">
                     <div class="contentRow row">
-                        <% trees.forEach(function(tree){ %>
-                        <section class="col-sm-6 col-md-4 defaultSlotStyle">
-                            <div class="thumbnail">
-                                <img src="<%=tree.img%>" alt="<%=tree.english_name%>">
-                                <div class="caption">
-                                    <h2><%=tree.english_name%></h2>
-                                    <h6><%=tree.myaamia_name%></h6>
-                                    <h6><%=tree.latin_name%></h6>
-                                    <a href="/tree/<%=tree.english_name%>" class="btn btn-default" role="button">Learn More</a>
-                                </div>
-                            </div>
+                        <section class="col-sm-8 defaultSlotStyle">
+                            <h1>Page Not Found</h1>
+                            <h2>Oh Snap!</h2>
+                            <p>Something has gone wrong with our website.</p>
+                            <p>Hopefully we can fix this ASAP but in the meantime, here are some coping mechanisms:</p>
+                            <ul>
+                                <li>If you typed the page address yourself, make sure it is spelled correctly.</li>
+                                <li>Start from the homepage.</li>
+                                <li>Search for what you are trying to find.</li>
+                                <li>Report a problem with the website.</li>
+                                <li>If you are a current student, faculty, or staff member looking for Miami resources, try myMiami.</li>
+                            </ul>
+                            <h4>Error Details</h4>
+                            <p>404 Not Found</p>
                         </section>
-                        <% }); %>
                     </div>
                 </div>
             </section>
@@ -130,6 +132,7 @@
                     </div>
                 </footer>
     </div>
+    
     <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
