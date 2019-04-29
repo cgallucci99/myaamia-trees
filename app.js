@@ -46,15 +46,7 @@ app.get("/tree/:name", function(req,res) {
         } else {
             res.render("tree",{tree:foundTree});
         }
-    })
-
-    // Tree.findById(req.params.id, function (err, foundTree){
-    //     if (err) {
-    //         console.log(err);
-    //     } else {
-    //         res.render("tree",{tree:foundTree});
-    //     }
-    // });
+    });
 });
 
 app.post("/search", function (req, res) {
@@ -62,7 +54,7 @@ app.post("/search", function (req, res) {
         if (err) {
             console.log(err);
         } else {
-            res.render("search",{trees:trees});
+            res.render("trees",{trees:trees});
         }
     })
 });
