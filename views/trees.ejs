@@ -19,11 +19,11 @@
             </header>
             <section class="colPrimary col-xs-12">
                 <div class="content removepadding col-sm-12">
-                    <div class="contentRow row">
+                    <div class="contentRow row" style="display: flex; flex-wrap: wrap;">
                         <% trees.forEach(function(tree){ %>
-                        <section class="col-sm-6 col-md-4 defaultSlotStyle">
+                        <section class="col-sm-6 col-md-3 defaultSlotStyle">
                             <div class="thumbnail">
-                                <img src="<%=tree.img%>" alt="<%=tree.english_name%>" style="height: 325px;">
+                                <img src="<%=tree.img%>" alt="<%=tree.english_name%>">
                                 <div class="caption">
                                     <h2><%=tree.english_name%></h2>
                                     <h6><%=tree.myaamia_name%></h6>
