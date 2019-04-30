@@ -20,12 +20,13 @@
             <section class="colPrimary col-xs-12">
                 <div class="content removepadding col-sm-12">
                     <div class="contentRow row">
-                        <section class="col-md-6 defaultSlotStyle">
-                            <div class="imageContainer">
+                        <div class="col-md-1"></div>
+                        <section class="col-md-5 doubleBorder defaultSlotStyle">
+                            <div class="imageContainer" >
                                 <img src="<%=tree.img%>" alt="<%=tree.english_name%>" class="noEffect">
                             </div>
                         </section>
-                        <section class="col-md-6 defaultSlotStyle">
+                        <section class="col-md-5 defaultSlotStyle">
                             <div>
                                 <h6>Myaamia name: <%=tree.myaamia_name%></h6>
                                 <h6>Latin name: <%=tree.latin_name%></h6>
@@ -37,9 +38,11 @@
                                 <a href="https://www.google.com/maps/search/<%=tree.location%>" class="whiteCalloutButton">Find it on the map</a>
                             </div>
                         </section>
+                        <div class="col-md-1"></div>
                     </div>
+                    <div class="col-sm-1"></div>
                     <div class="contentRow row">
-                        <section class="col-sm-6 redBackground pull-right">
+                        <section class="col-sm-6 redBackground">
                             <a href="/update/<%=tree.english_name%>" class="whiteCalloutButton">Update Tree</a>
                         </section>
                     </div>
