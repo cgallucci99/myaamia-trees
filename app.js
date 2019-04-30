@@ -59,6 +59,20 @@ app.post("/search", function (req, res) {
     })
 });
 
+app.get("/addTree", function(req, res){
+    res.render("create");
+});
+
+app.post("/addTree", function(req, res) {
+    Tree.create(req.body.tree, function(err, newTree) {
+        if(err) {
+            res.render("create");
+        } else {
+            res.redirect("/trees");
+        }
+    });
+});
+
 app.get("*", function (req, res) {
     res.render("not-found");
 });
