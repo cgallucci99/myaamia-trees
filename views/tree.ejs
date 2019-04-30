@@ -29,9 +29,18 @@
                             <div>
                                 <h6>Myaamia name: <%=tree.myaamia_name%></h6>
                                 <h6>Latin name: <%=tree.latin_name%></h6>
-                                <%-tree.description%>
+                                <section class="redBackground">
+                                    <div class="treeDescription">
+                                        <%-tree.description%>
+                                    </div>
+                                </section>
                                 <a href="https://www.google.com/maps/search/<%=tree.location%>" class="whiteCalloutButton">Find it on the map</a>
                             </div>
+                        </section>
+                    </div>
+                    <div class="contentRow row">
+                        <section class="col-sm-6 redBackground pull-right">
+                            <a href="/update/<%=tree.english_name%>" class="whiteCalloutButton">Update Tree</a>
                         </section>
                     </div>
                 </div>

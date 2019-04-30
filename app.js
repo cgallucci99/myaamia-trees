@@ -73,6 +73,26 @@ app.post("/addTree", function(req, res) {
     });
 });
 
+app.get("/update/:name", function(req, res) {
+    Tree.findOne({english_name: req.params.name}, function (err, foundTree){
+        if (err) {
+            console.log(err);
+        } else {
+            res.render("update",{foundTree:foundTree});
+        }
+    });
+});
+
+app.post("/update/:name", function(req, res) {
+    Tree.findOneAndUpdate({english_name: req.params.name}, req.body.tree, function (err, foundTree){
+        if (err) {
+            console.log(err);
+        } else {
+            res.redirect("/tree/" + req.params.name);
+        }
+    });
+});
+
 app.get("*", function (req, res) {
     res.render("not-found");
 });

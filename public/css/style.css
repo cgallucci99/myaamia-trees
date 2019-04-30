@@ -26,6 +26,10 @@ body {
     color: #c3142d;
 }
 
+.treeDescription>p {
+    line-height: 1.75em;
+}
+
 .container .redBackground>div .ui-accordion-header:focus, .container .redBackground>div .ui-accordion-header:hover {
     color: #fff;
 }

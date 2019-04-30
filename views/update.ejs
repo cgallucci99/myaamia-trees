@@ -20,23 +20,21 @@
                 <div class="content removepadding col-sm-12">
                     <div class="contentRow row">
                         <section class="col-md-6 defaultSlotStyle">
-                            <form action="/addTree" method="post">
+                            <form action="/update/<%= foundTree.english_name%>" method="post">
                                 <div class="">
-                                        <label for="english_name">English Name</label>
-                                        <input class="form-control" type="text" name="tree[english_name]" id="english_name"><br>
-                                        <label for="myaamia_name">Myaamia Name</label>
-                                        <input class="form-control" type="text" name="tree[myaamia_name]" id="myaamia_name"><br>
-                                        <label for="latin_name">Latin Name</label>
-                                        <input class="form-control" type="text" name="tree[latin_name]" id="latin_name"><br>
-                                        <label for="location">Location</label>
-                                        <input class="form-control" type="text" name="tree[location]" id="location"><br>
-                                        <label for="description">Description</label>
-                                        <textarea class="form-control" type="text" name="tree[description]" id="description">
-                                            
-                                        </textarea><br>
-                                        <label for="image">Image</label>
-                                        <input class="form-control"  type="text" name="tree[img]" id="image"><br>
-                                        <input class="btn btn-default" type="submit" value="Submit">
+                                    <label for="english_name">English Name</label>
+                                    <input class="form-control" value="<%= foundTree.english_name %>" type="text" name="tree[english_name]" id="english_name"><br>
+                                    <label for="myaamia_name">Myaamia Name</label>
+                                    <input class="form-control" value="<%= foundTree.myaamia_name %>" type="text" name="tree[myaamia_name]" id="myaamia_name"><br>
+                                    <label for="latin_name">Latin Name</label>
+                                    <input class="form-control" value="<%= foundTree.latin_name %>" type="text" name="tree[latin_name]" id="latin_name"><br>
+                                    <label for="location">Location</label>
+                                    <input class="form-control" value="<%= foundTree.location %>" type="text" name="tree[location]" id="location"><br>
+                                    <label for="description">Description</label>
+                                    <textarea rows="10" class="form-control" type="text" name="tree[description]" id="description"><%= foundTree.description %></textarea><br>
+                                    <label for="image">Image</label>
+                                    <input class="form-control" value="<%= foundTree.img %>" type="text" name="tree[img]" id="image"><br>
+                                    <input class="btn btn-default" type="submit" value="Submit">
                                 </div>
                             </form>
                         </section>
