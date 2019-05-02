@@ -11,6 +11,7 @@ of the different trees.
  * [Node.js](https://nodejs.org/)
  * [Express](https://expressjs.com/) - Framework
  * [MongoDB](https://www.mongodb.com/) - Database
+ * [Bootstrap 3](https://getbootstrap.com/docs/3.3/) - Front-end Framework
  * [EJS](https://ejs.co/) - Markup
  * [Heroku](https://www.heroku.com/) - Deployment
 
@@ -24,3 +25,4 @@ Cam Gallucci
  * Josh McCoy
  * Will DeBruler
  * Nick Tufts
+ * Cam Gallucci
