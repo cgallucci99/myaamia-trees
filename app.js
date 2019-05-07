@@ -29,6 +29,10 @@ app.get("/", function(req, res){
     res.render("index");
 });
 
+app.get("/geocache", function(req, res){
+    res.render("geocache");
+});
+
 app.get("/trees", function (req, res) {
     Tree.find({},function (err,trees) {
         if (err) {
