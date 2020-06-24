@@ -2,8 +2,8 @@ var express = require("express");
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var app = express();
-
-mongoose.connect('mongodb+srv://camg:201009@testing-kfdro.mongodb.net/trees?retryWrites=true', { useNewUrlParser: true }, function (err) {
+var pw = '<insert password here>';
+mongoose.connect('mongodb+srv://camg:'+pw+'@testing-kfdro.mongodb.net/trees?retryWrites=true', { useNewUrlParser: true }, function (err) {
     if (err) {
         console.log(err);
     }
